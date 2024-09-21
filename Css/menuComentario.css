@@ -1,0 +1,27 @@
+.comment-item {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre o conteúdo e o ícone */
+    align-items: center; /* Alinha verticalmente */
+    margin: 10px 0; /* Espaçamento entre os comentários */
+    position: relative;
+}
+
+.comment-content {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto e o ícone */
+    gap:350px
+}   
+
+/* Opções de comentário */
+.comment-options {
+    display: flex;
+    flex-direction: column;
+    display: none; /* Esconde inicialmente */
+    position: absolute; /* Para posicionar em relação ao contêiner pai */
+    background-color: white; /* Fundo para as opções */
+    border: 1px solid #ccc; /* Borda das opções */
+    padding: 5px; /* Espaçamento interno */
+    z-index: 1000; /* Para garantir que fiquem acima de outros elementos */
+    top: 100%;
+    right: 0;
+}
